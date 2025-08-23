@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family:arial, "Segoe UI";
+    background-color: #dddbe0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/** ---- INDEX ---- **/
+
+/*? ---- HEADER ---- */
+
+.boton-custom {
+    text-transform: uppercase;
+    color: darkmagenta;
+}
+
+/*? ---- HERO ---- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    min-height: calc(100vh - 50px);
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px 20px;
+    padding-top: 120px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hero h2 {
+    background-color: transparent;
+    font-size: 40px;
+    color: #FAEBD7;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #FAEBD7;
+    margin-bottom: 10px;
+}
+
+/*? ---- HERO ---- */
+
+/*? ---- PRODUCTOS DESTACADOS ---- */
+
+h2 {
+    color: white;
+    background-color: #3c0484;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.productos-destacados .contenedor-items-destacados {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.productos-destacados .contenedor-items-destacados div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: black;
+    border: 2px solid darkviolet;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-basis: calc(30% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    min-height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.boton {
+    background-color: violet;
+    color: #FAEBD7;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.5s, transform 0.5s;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: darkmagenta;
+    color:#FAEBD7;
+    transform: scale(1.05);
+}
+/*? ---- PRODUCTOS DESTACADOS ---- */
+
+/*? ---- PRODUCTOS ---- */
+
+.productos .contenedor-item {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.productos .contenedor-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: black;
+    border: 2px solid darkviolet;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-basis: calc(30% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    min-height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*? ---- PRODUCTOS ---- */
+
+/** ---- INDEX ---- **/
+
+/** ---- PAGINA "PRODUCTOS" ---- **/
+
+.productos .contenedor-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.productos .contenedor-items div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: black;
+    border: 2px solid darkviolet;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: calc(25% - 20px);
+    min-height: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-items img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/** ---- PAGINA "PRODUCTOS" ---- **/
+
+/** ---- PAGINA "NOSOTROS" ---- **/
+
+.nosotros p {
+    font-size: 18px;
+    color: black;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.valores .row {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+    box-sizing: border-box;
+}
+
+.innovacion,
+.calidad,
+.atencion-personalizada {
+    flex: 1 1 30%;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.valores p {
+    font-size: 18px;
+    color: black;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.valores h3 {
+    color: darkmagenta;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.timeline .timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline .timeline-item {
+    margin-left: 20px;
+    padding: 20px;
+    border-left: 4px solid darkviolet;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.timeline .timeline-item h3 {
+    color: darkmagenta;
+    margin-bottom: 10px;
+}
+
+/** ---- PAGINA "NOSOTROS" ---- **/
+
+/** ---- PAGINA "CONTACTO" ---- **/
+
+.contacto {
+    text-align: center;
+}
+
+.info-contacto p {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+p .highlight {
+    color: darkmagenta;
+}
+
+.envianos-un-mensaje form {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: darkmagenta;
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+}
+
+.envianos-un-mensaje form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/** ---- PAGINA "CONTACTO" ---- **/
+
+/** ---- PAGINA "OPINIONES" ---- **/
+
+.testimonios {
+    text-align: center;
+}
+
+.abc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px;
+    gap: 30px;
+}
+
+.col-md-4 {
+    flex: 1 1 300px;
+    max-width: 350px;
+    border-left: 4px solid violet;
+    border-radius: 10px 0 10px 0;
+    padding: 20px;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.blockquote-footer {
+    background-color: black;
+    color: #FAEBD7;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/** ---- PAGINA "OPINIONES" ---- **/
+
+/*! ---- WHATSAPP ---- */
+
+.fixed {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.fixed a img {
+    width: 70px;
+}
+/*! ---- WHATSAPP ---- */
+
+/*! ---- FOOTER --- */
+
+footer {
+    background-color: #3D3D3D;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+h4 {
+    color: #FAEBD7;
+    font-size: 22px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    flex-wrap: wrap;
+}
+
+.footer .footer-container .footer-section-social {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.footer-section-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    color: #FAEBD7;
+
+}
+/*! ---- FOOTER --- */
+
+/*! ---- MEDIAS QUERIES ---- */
+
+@media screen and (max-width: 768px) {
+    .productos-destacados .contenedor-items-destacados {
+        align-items: center;
+    }
+
+    .productos-destacados .contenedor-items-destacados div {
+        flex-basis: 100%;
+        max-width: 90%;
+    }
+
+    .productos .contenedor-item {
+        align-items: center;
+    }
+
+    .productos .contenedor-item div {
+        flex-basis: 100%;
+        max-width: 90%;
+    }
+
+    .productos .contenedor-items {
+        align-items: center;
+    }
+
+    .productos .contenedor-items div {
+        flex-basis: 100%;
+        max-width: 90%;
+    }
+
+    .valores .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .innovacion,
+    .calidad,
+    .atencion-personalizada {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer .footer-section-social {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+/*! ---- MEDIAS QUERIES ---- */
