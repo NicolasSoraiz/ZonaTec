@@ -31,6 +31,23 @@ main {
   color: darkmagenta;
 }
 
+.btn-buscar {
+  background-color: magenta;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.btn-buscar:hover {
+  background-color: darkmagenta;
+  color: white;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 255, 0.25);
+  outline: none;
+}
+
 .hero {
   display: flex;
   flex-direction: column;

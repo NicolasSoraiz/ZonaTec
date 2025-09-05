@@ -40,6 +40,23 @@ main {
     color: $primary-color;
 }
 
+.btn-buscar {
+    background-color: magenta;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darkmagenta;
+        color: white;
+    }
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 255, 0.25);
+    outline: none;
+}
 // HERO //
 
 .hero {
